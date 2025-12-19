@@ -1,0 +1,23 @@
+# Visual Studio user/cache files
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+
+# Build outputs
+Debug/
+Release/
+x64/
+x86/
+out/
+bin/
+obj/
+
+# MSBuild/VS intermediate files
+*.ipch
+*.pdb
+*.ilk
+*.log
+*.tlog
+*.idb
