@@ -6,6 +6,9 @@
 #include <iostream>
 #include "question_1.h"
 #include "question_2.h"
+#include "question_3.h"
+
+
 
 static void runQuestion1ProvidedTests() {
     std::cout << "=== Question 1: Provided test cases ===\n\n";

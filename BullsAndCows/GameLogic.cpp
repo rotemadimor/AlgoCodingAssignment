@@ -81,3 +81,4 @@ Feedback computeFeedback(const std::vector<int>& a, const std::vector<int>& b) {
     result.cows = common - result.bulls;
     return result;
 }
+

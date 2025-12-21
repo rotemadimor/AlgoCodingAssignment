@@ -17,6 +17,22 @@ struct Feedback {
     int cows;
 };
 
+bool operator==(const Feedback& a, const Feedback& b) {
+    return (a.bulls == b.bulls) && (a.cows == b.cows);
+}
+
+bool operator!=(const Feedback& a, const Feedback& b) {
+    return !(a == b);
+}
+
+bool isInSearchSpace(const Feedback& guessFeedback, const Feedback& secretFeedback) {
+    return ((secretFeedback.bulls + secretFeedback.cows) == (guessFeedback.bulls + guessFeedback.cows));
+}
+
+bool isCorrectFeedback(const Feedback& fb, int nDigits) {
+    return (fb.bulls == nDigits);
+}
+
 /**
  * Returns the number of decimal digits in a non-negative integer.
  * Examples: 0 -> 1, 7 -> 1, 1234 -> 4.
